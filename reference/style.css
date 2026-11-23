@@ -18,3 +18,26 @@ a:hover,
 a:active {
     color: inherit;
 }
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('website backround.png');
+  background-size: 1920px 1080px;
+  background-repeat: repeat-x: repeat-y;
+  background-position: 0 0;
+  animation: scrollRight 16s linear infinite;
+  }
+
+@keyframes scrollRight {
+  0% { 
+  `background-position: 0 0; 
+  }
+  100% { 
+    background-position: 960px 0; 
+  }
+}
